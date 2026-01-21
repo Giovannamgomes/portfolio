@@ -1,20 +1,25 @@
-.cover {
-  background: #111;
-  color: white;
-}
-
 body {
   font-family: Arial, sans-serif;
-  background: #f2d6de; /* rosé */
+  background: #f2d6de;
   text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.site-title {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.site-subtitle {
+  font-size: 14px;
+  margin-bottom: 20px;
 }
 
 .book {
-  width: 320px;
-  margin: 20px auto;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
+  width: 360px;
+  margin: 0 auto;
+  background: transparent;
 }
 
 .page {
@@ -25,62 +30,72 @@ body {
   display: block;
 }
 
-.page img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.controls {
-  margin-top: 10px;
-}
-
-button {
-  padding: 8px 16px;
-  margin: 5px;
-  border: none;
-  background: #000;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.cover h1 {
-  font-family: 'Pacifico', cursive;
-  font-size: 32px;
-  margin-bottom: 20px;
-  letter-spacing: 1px;
-  line-height: 1.2;
-}
-
-.cover .questions {
-  font-size: 14px;
-  line-height: 1.6;
-  margin-bottom: 15px;
-  color: #dbe7ee;
-}
-
-.cover .intro {
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.cover .hint {
-  font-size: 12px;
-  color: #b0cbd8;
-}
-
+/* CAPA */
 .cover {
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   background: linear-gradient(
     135deg,
     #0f2027,
     #203a43,
     #2c5364
   );
-  color: white;
-  border-radius: 10px;
+
+  border-radius: 16px;
 }
 
-.book {
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+.cover-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 68px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+/* LIVRO ABERTO */
+.spread {
+  display: flex;
+  gap: 16px;
+}
+
+.page-left,
+.page-right {
+  width: 50%;
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.page-left h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+/* PROJETOS */
+.page img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.page p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* CONTROLES */
+.controls {
+  margin-top: 15px;
+}
+
+button {
+  padding: 8px 18px;
+  margin: 5px;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
 }
